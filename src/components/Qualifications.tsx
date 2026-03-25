@@ -1,13 +1,13 @@
 const qualifications = [
   {
-    degree: "Bachelor of Computer Applications (BCA)",
-    college: "Your College Name",
-    year: "2023 – 2026",
+    degree: "B.Tech Computer Science and Business System",
+    college: "Madras Engineering College",
+    year: "2025 – 2029",
   },
   {
     degree: "Higher Secondary (12th)",
-    college: "Your School Name",
-    year: "2021 – 2023",
+    college: "St Joseph's Hr Sec School",
+    year: "2023 – 2025",
   },
 ];
 

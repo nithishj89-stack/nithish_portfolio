@@ -12,17 +12,17 @@ const Contact = () => (
       <div className="flex flex-col items-center gap-6">
         <div className="flex items-center gap-3 text-muted-foreground">
           <Mail className="w-5 h-5 text-accent" />
-          <a href="mailto:your.email@example.com" className="hover:text-accent transition-colors">
-            your.email@example.com
+          <a href="mailto:nithishj89@gmail.com" className="hover:text-accent transition-colors">
+            nithishj89@gmail.com
           </a>
         </div>
         <div className="flex items-center gap-3 text-muted-foreground">
           <MapPin className="w-5 h-5 text-accent" />
-          <span>Your City, Country</span>
+          <span>Chengalpattu, Tamil Nadu, India</span>
         </div>
         <div className="flex gap-4 mt-4">
           <a
-            href="https://github.com"
+            href="https://github.com/nithishj89-stack"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center text-foreground transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:shadow-lg"
@@ -30,7 +30,7 @@ const Contact = () => (
             <Github className="w-5 h-5" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/nithish-j-841669355/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center text-foreground transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:shadow-lg"

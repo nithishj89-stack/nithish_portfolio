@@ -15,7 +15,7 @@ const Hero = () => {
         </div>
         <div className="space-y-4">
           <h1 className="text-5xl md:text-7xl font-display font-bold text-foreground tracking-tight">
-            Your Name
+            NITHISH J
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground font-medium">
             Aspiring Developer | Tech Enthusiast
