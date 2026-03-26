@@ -1,3 +1,5 @@
+import DecryptedText from "@/DecryptedText";
+
 const qualifications = [
   {
     degree: "B.Tech Computer Science and Business System",
@@ -15,9 +17,16 @@ const Qualifications = () => (
   <section id="qualifications" className="py-24 px-6">
     <div className="max-w-4xl mx-auto space-y-12">
       <div className="text-center space-y-4">
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-          Qualifications
-        </h2>
+        <DecryptedText
+          text="Qualifications"
+          speed={40}
+          maxIterations={15}
+          characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+          className="text-3xl md:text-4xl font-display font-bold text-foreground"
+          parentClassName="block"
+          encryptedClassName="text-muted-foreground"
+          animateOn="scroll"
+        />
         <div className="w-16 h-1 bg-accent mx-auto rounded-full" />
       </div>
       <div className="grid md:grid-cols-2 gap-6">

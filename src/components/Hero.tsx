@@ -1,12 +1,14 @@
-import profileImg from "@/assets/profile.jpg";
+import profileImg from "@/assets/profile-update.jpg";
+import DecryptedText from "@/DecryptedText";
+import ScrollFloat from "./ScrollFloat";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="max-w-4xl mx-auto text-center flex flex-col items-center gap-8">
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
+      <div className="max-w-4xl mx-auto text-center flex flex-col items-center gap-8 relative z-10">
         <div className="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-accent shadow-lg">
           <img
-            src={profileImg}
+            src={profileImgSrc}
             alt="Profile photo"
             width={512}
             height={512}
@@ -14,12 +16,31 @@ const Hero = () => {
           />
         </div>
         <div className="space-y-4">
-          <h1 className="text-5xl md:text-7xl font-display font-bold text-foreground tracking-tight">
-            NITHISH J
-          </h1>
+          <DecryptedText
+            text="NITHISH J"
+            speed={100}
+            maxIterations={15}
+            characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            className="text-4xl md:text-6xl font-display font-bold text-foreground"
+            parentClassName="block"
+            encryptedClassName="text-muted-foreground"
+            animateOn="scroll"
+          />
           <p className="text-lg md:text-xl text-muted-foreground font-medium">
             Aspiring Developer | Tech Enthusiast
           </p>
+          <div className="text-base md:text-lg">
+            <DecryptedText
+              text="However to reveal your next opportunity"
+              speed={30}
+              maxIterations={20}
+              characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*"
+              className="text-accent font-bold text-lg md:text-2xl drop-shadow-[0_0_15px_rgba(124,255,103,0.9)]"
+              parentClassName="inline-block"
+              encryptedClassName="text-muted-foreground font-semibold opacity-70"
+              animateOn="scroll"
+            />
+          </div>
         </div>
         <a
           href="#projects"
